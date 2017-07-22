@@ -1,0 +1,41 @@
+/*
+//paleta 1
+$rosa: #ff00fb;
+$azul: #0b3c49;
+$cielo: #c8d5b9;
+$morado:#731963;
+$blanco: #ffffff;
+//paleta2
+$marino: #2e4057;
+$teal: #66a182;
+$menta: #caffb9;*/
+main {
+  background: #ff00fb; }
+
+#slider {
+  background-image: url(../assets/img/slide-pregnant.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: flex-end; }
+  #slider #btn-contacto {
+    margin-top: 10vh;
+    margin-left: 60vw;
+    border: solid 2px #ffffff; }
+
+#go-down {
+  position: absolute;
+  margin-top: -10vh;
+  margin-left: 50vw; }
+
+#intro {
+  background: #731963;
+  color: #fff; }
+
+#habilidades {
+  background: #ff00fb;
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
