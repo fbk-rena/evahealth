@@ -14,14 +14,59 @@
 <body>
     <main class="rosa">
         <section id="slider">
-            <section >
-                <div id="fb-root"></div>
-                <a id="facebook" onclick="reload()">
-                    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div> 
-                </a>
-            </section>
-            <div class="row">
-                <a id="btn-contacto" href="m.me/evabotsalud" class="waves-effect waves-light btn transparent text-teal">Habla conmigo</a>
+           <div id="btn-contacto"  class="row">
+                <div class="col s9">
+                    <a id="btn-habla" href="m.me/evabotsalud" class="waves-effect waves-light btn">Hablemos</a>
+                    <section>
+                        <div id="fb-root"></div>
+                        <a id="facebook" onclick="reload()">
+                            <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+            
+        </section>
+        <section id="chatbox" class="container">
+            <div class='chat'>
+                <div id="chat" class='messages'>
+                    <div class='message'>
+                        <div class='eva'>
+                            Hola soy Eva!!!
+                        </div>
+                    </div>
+                     <div id="asistente" class='message' hidden="hidden">
+                        <div class='eva'>
+                             Tu asistente de salud personalizada, resolveré tus dudas y te puedo ayudar con los que necesites
+                        </div>
+                    </div>
+                    <div id="preg" class='message' hidden="hidden">
+                        <div class='you'>
+                            No se si estoy embarazada
+                        </div>
+                    </div>
+                    <div id="relax" class='message' hidden="hidden">
+                        <div class='eva'>
+                             Tranquila, contesta unas sencillas preguntas, te guiare sobre tus resultados 
+                        </div>
+                    </div>
+                    <div id="ok" class='message' hidden="hidden">
+                        <div class='you'>
+                            Esta bien
+                        </div>
+                    </div>
+                    <div id="start" class='message' hidden="hidden">
+                        <div class='eva'>
+                             Empecemos
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='input'>
+                    <form action='#' id='chat'>
+                        <input id="placeh" class='text' contenteditable placeholder='Escribeme tus dudas...'>
+                    </form>
+                </div>
             </div>
         </section>
         <section id="intro">
@@ -30,9 +75,9 @@
                 <div class="row">
                     <div class="col m7 s8">
                         <h3>Hola soy EVA tu compañera de salud personalizada!!!</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                        <h5>Blablalalla</h5>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p></p>
+                        <h5>Necesitas opciones</h5>
+                        <p>Te daré una guía de opciones para que puedas acceder a todos los servicios, productos que necesites en cada etapa.</p>
                     </div>
                 </div>
             </div>
@@ -59,8 +104,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-    <!--<script src="assets/js/app.js"></script>-->
     <script src="assets/js/facebook.js"></script>
+    <script src="assets/js/chatbox.js"></script>
 </body>
 
 </html>
