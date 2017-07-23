@@ -9,21 +9,21 @@ $blanco: #ffffff;
 $marino: #2e4057;
 $teal: #66a182;
 $menta: #caffb9;*/
-main {
-  background: #ff00fb; }
-
+.rosa {
+  background: #ff00fb; 
+}
 #slider {
-  background-image: url(../assets/img/slide-pregnant.jpg);
+  background-image: url(../img/portada.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   position: relative;
   justify-content: flex-end; }
-  #slider #btn-contacto {
+  /*#slider #btn-contacto {
     margin-top: 10vh;
     margin-left: 60vw;
-    border: solid 2px #ffffff; }
+    border: solid 2px #ffffff; }*/
 
 #go-down {
   position: absolute;
