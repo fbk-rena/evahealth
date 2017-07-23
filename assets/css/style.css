@@ -67,7 +67,9 @@ body {
     margin-top: 20%;
 }
 
-
+.bton-side{
+    color: #ff00fb;
+}
 /*chat bot estilos*/
 
 .chat {
