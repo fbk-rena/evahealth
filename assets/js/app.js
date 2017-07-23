@@ -4,7 +4,7 @@ var cargarPagina = function () {
 }
 
 var materialize = function () {
-    $(".button-collapse").sideNav();
+    $(".bton-side").sideNav();
     $(".dropdown-button").dropdown();
     $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
