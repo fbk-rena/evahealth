@@ -12,21 +12,25 @@
 </head>
 
 <body>
-    <ul id="dropdown2" class="dropdown-content">
-        <li><a href="#!">Perfil</a></li>
+    <ul id="dropdown2" class="dropdown-content" data-beloworigin="true " gutter="3">
+        <li><a href="config.html">Configurar</a></li>
         <li class="divider"></li>
-        <li><a href="#!">Salir</a></li>
+        <li>
+            <a id="facebook" onclick="inicio()">
+                <div class="fb-login-button" data-max-rows="1" data-size="small" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
+            </a>
+        </li>
     </ul>
-    <nav>
-        <div class="nav-wrapper navegador">
+    <nav >
+        <div class="nav-wrapper navegador rosa">
             <a href="#" class="brand-logo center">Eva</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="">Perfil</a></li>
+                <li class="active"><a href="datos.html">Perfil</a></li>
                 <li>
                     <a class="dropdown-button" href="#!" data-activates="dropdown2"><i class="material-icons">settings</i></a></li>
             </ul>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="#!">Inicio</a></li>
+                <li><a href="home.html">Inicio</a></li>
             </ul>
         </div>
     </nav>
@@ -40,7 +44,7 @@
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
-                                <h4 class="header">Nombre Usuaria</h4>
+                                <h4 class="header name"></h4>
                                 <p>I am a very simple card. I am good at containing small bits of information.</p>
                             </div>
                             <div class="card-action">
@@ -53,19 +57,19 @@
                     <div class="col s12 m6">
                         <div class="card">
                             <div class="card-content">
-                              <h5>Semanas de embarazo:</h5>
-                               <span>semanas</span>
+                                <h5>Semanas de embarazo:</h5>
+                                <span>semanas</span>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m6">
                         <div class="card">
                             <div class="card-content">
-                              <h5>Peso:</h5>
-                              <span></span>
-                               <li class="divider"></li>
-                              <h5>Estatura:</h5>
-                               <span></span>
+                                <h5>Peso:</h5>
+                                <span></span>
+                                <li class="divider"></li>
+                                <h5>Estatura:</h5>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -184,6 +188,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/facebook-views.js"></script>
 </body>
 
 </html>

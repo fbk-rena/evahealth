@@ -13,20 +13,24 @@
 
 <body>
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">Configurar</a></li>
+        <li><a href="config.html">Configurar</a></li>
         <li class="divider"></li>
-        <li><a href="#!">Salir</a></li>
+        <li>
+            <a id="facebook" onclick="inicio()">
+                <div class="fb-login-button" data-max-rows="1" data-size="small" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
+            </a>
+        </li>
     </ul>
     <nav>
-        <div class="nav-wrapper navegador">
+        <div class="nav-wrapper navegador rosa">
             <a href="#" class="brand-logo center">Eva</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="">Perfil</a></li>
+                <li><a href="datos.html">Perfil</a></li>
                 <li>
                     <a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">settings</i></a></li>
             </ul>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="#!">Inicio</a></li>
+                <li class="active"><a href="#!">Inicio</a></li>
             </ul>
         </div>
     </nav>
@@ -36,9 +40,9 @@
                 <div class="background">
                     <img src="images/office.jpg">
                 </div>
-                <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-                <a href="#!name"><span class="white-text name">John Doe</span></a>
-                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                <a href="#!user"><img class="circle foto" src="images/yuna.jpg"></a>
+                <a href="#!name"><span class=" name"></span></a>
+                <a href="#!email"><span class="mail email"></span></a>
             </div>
         </li>
         <li><a href="datos.html"><i class="material-icons">folder_shared</i>Mis datos</a></li>
@@ -71,8 +75,8 @@
                 <div class="col s8">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../assets/img/ducks-1426010_1920.jpg">
-                            <span class="card-title">Card Title</span>
+                            <img src="../img/panales.jpg">
+                            <span class="card-title">Preeclampsia</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
@@ -83,12 +87,14 @@
                 <div class="col s4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../assets/img/aditya-romansa-117344.jpg">
-                            <span class="card-title">Card Title</span>
+                            <img src="../img/esteto.jpg">
+                            <span class="card-title">¿Qué es la preeclampsia?</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            <p>
+                                La preeclampsia es una complicación del embarazo que causa hipertensión arterial (presión alta), daños a los riñones y otros problemas. Es una condición potencialmente mortal que afecta a alrededor del 5 por ciento de las mujeres embarazadas. https://espanol.babycenter.com/a700346/preeclampsia#ixzz4ncjkyCtl
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -97,19 +103,19 @@
                 <div class="col s6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../assets/img/tim-bish-171738.jpg">
-                            <span class="card-title">Card Title</span>
+                            <img src="../img/lactancia.jpg">
+                            <span class="card-title">Beneficios de la lactancia</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            <p>La leche materna es una alimento ecológico, lo que significa que no necesita fabricarse, envasarse ni transportarse. Esto supone un ahorro de energía al mismo tiempo que se evita la contaminación del medio ambiente. Además, resulta un ahorro en alimentación a la familia. Puesto que hay una menor incidencia de enfermedades, disminuye a su vez el gasto sanitario.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col s6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../assets/img/rhodi-alers-de-lopez-196141.jpg">
+                            <img src="../img/new-born.jpg">
                             <span class="card-title">Card Title</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
@@ -123,7 +129,7 @@
                 <div class="col s8">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../assets/img/piron-guillaume-96228.jpg">
+                            <img src="../img/andrew-branch-191921%20(1).jpg">
                             <span class="card-title">Card Title</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
@@ -135,7 +141,7 @@
                 <div class="col s4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../assets/img/andrew-branch-191921%20(1).jpg">
+                            <img src="../img/due-date.jpg">
                             <span class="card-title">Card Title</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                         </div>
@@ -149,6 +155,7 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="../js/facebook-views.js"></script>
     <script src="../js/app.js"></script>
 </body>
 
