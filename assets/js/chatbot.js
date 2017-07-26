@@ -44,5 +44,6 @@ var ok = function () {
 }
 var start = function (){
     $("#start").removeAttr("hidden")
+     setTimeout(window.location.href=window.location.href+"#intro", 1500)
 }
 $(document).ready(iniciaChat);
