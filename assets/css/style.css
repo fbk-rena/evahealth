@@ -15,18 +15,43 @@ $menta: #caffb9;*/
     border: 0;
     outline: 0;
 }
-
+.due{
+    border: solid 1px #731963;
+}
+.card-perfil {
+    border: solid 2px #731963;
+}
+#Datos{
+    margin-top: 10vh;
+}
+.text-pink{
+    color: #ff00fb !importat;
+}
 body {
     font-family: Arial;
 }
-
+.jumbotron{
+    color: #731963;
+    padding: 5vh;
+}
+.etapas{
+    padding: 5vh;
+}
 .rosa {
     background: #ff00fb;
+}
+.btn-morado{
+    margin: 3vh;
+}
+.morado {
+    background: #731963;
 }
 #datos{
     color: #731963;
 }
-
+img{
+    padding: 3vh;
+}
 #slider {
     background-image: url(../img/portada.jpg);
     background-size: cover;

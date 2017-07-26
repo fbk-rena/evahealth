@@ -8,7 +8,7 @@ window.fbAsyncInit = function () {
         if (response.status === 'connected') {
             console.log('Concetado');
             getInfo();
-            setTimeout(datos, 3500);
+            setTimeout(datos, 1500);
 
         } else if (response.status === 'not_authorized') {
             //inicio();
